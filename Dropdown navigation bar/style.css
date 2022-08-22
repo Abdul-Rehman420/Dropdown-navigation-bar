@@ -1,0 +1,76 @@
+/* ########### Dropdown navigation bar ########### */
+.lower-head{
+    background-color: #0288d1;
+} 
+.lower-head ul{
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    float: left;
+    margin-left:25px ;
+}
+.lower-head::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.lower-head ul a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight:normal;
+    line-height: 60px;
+    padding: 0 15px;
+    display: block;
+}
+.lower-head ul li{
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.lower-head ul li:hover{
+    background-color: #fff;
+    color: #112;
+}
+
+
+.lower-head ul li:hover>a{
+    color: #112;
+}
+
+
+
+.lower-head ul ul{
+    position: absolute;
+    background: #112;
+    top: 100%;
+    left: 0;
+    display:none ;
+}
+
+.lower-head ul ul li{
+    float: none;
+    width: 315px;
+    
+    background-color: #fff;
+}
+.lower-head ul ul li a{
+    color: rgba(17, 17, 34, 0.705);
+}
+
+.lower-head ul li:hover > ul{
+    display: block;
+}
+i.search{
+    color: #fff;
+    padding:18px ;
+    
+}
+i.search:hover{
+    background-color: #fff;
+}
+.lower-head ul li:hover>i{
+    color: #112;
+}
